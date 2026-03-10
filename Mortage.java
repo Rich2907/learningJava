@@ -3,13 +3,48 @@ import java.util.*;
 public class Mortage {
 public static void main(){
     Scanner sc=new Scanner(System.in);
-    System.out.println("Principal:");
-    double Principal=sc.nextDouble();
+    System.out.println("Principal:"); 
+    double Principal;   
+    while(true)
+    {
+        Principal=sc.nextDouble();
+        if(Principal<1000 || Principal>1000000)
+        {
+            System.out.println("Enter a number between 1000 and 1000000");
+        System.out.println("Principal: ");
+        }
+            else
+        break;
+    }
+
     System.out.println("Rate");
-    double r=sc.nextDouble();
+    double r;
+     while(true)
+    {
+        r=sc.nextDouble();
+        if(r<0 || r>30)
+        {
+            System.out.println("Enter rate that is between 0 and 30");
+        System.out.println("Rate: ");
+        }
+            else
+        break;
+    }
     r=r/100/12;
     System.out.println("Period");
-    double year=sc.nextDouble();
+    double year;
+    
+     while(true)
+    {
+        year=sc.nextDouble();
+        if(year<0 || r>30)
+        {
+            System.out.println("Enter a time period that is between 0 and 30");
+        System.out.println("Period: ");
+        }
+            else
+        break;
+    }
     year=year*12;
     double mortage;
     double k=Math.pow(1+r,year);
