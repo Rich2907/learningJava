@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main{
     public static void main(String[] args) {
-
+   TaskManager manager = new TaskManager();
         Scanner sc=new Scanner(System.in);
         while(true)
         {
@@ -12,7 +12,6 @@ public class Main{
         System.out.println("4. Delete Task");
         System.out.println("5. Mark Complete");
         int choice=sc.nextInt();
-        TaskManager manager = new TaskManager();
         if(choice == 6)
             break;
         switch (choice) {

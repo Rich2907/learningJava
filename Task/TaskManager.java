@@ -30,7 +30,7 @@ public class TaskManager{
             t.title=title;
             t.description=description;
             t.completed=false;
-            t.dueDate=t.dueDate;
+            t.dueDate=dueDate;
             System.out.println("Task updated successfully");
             return;
         }
@@ -47,9 +47,10 @@ public class TaskManager{
             t.completed=true;
             System.out.println("Successfully completed");
             return ;
-        }
+        }}
+        
         System.out.println("Task not found");
-    }
+    
  }
  void listAllTask()
  {
